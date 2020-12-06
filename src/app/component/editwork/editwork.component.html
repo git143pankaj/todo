@@ -1,0 +1,24 @@
+<div class="contaier">
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <h2 class="text-center">Edit Worklist</h2>
+            <form [formGroup]="addForm" (ngSubmit)="addFormSubmit()">
+
+                <div class="form-group">
+                    <label>ID</label>
+                    <input type="text" class="form-control" readonly formControlName="id">
+                </div>
+
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" placeholder="Enter Name" formControlName="name">
+                  </div> 
+                 
+                  <div class="form-group text-right">
+                     <button class="btn btn-primary" type="submit" [disabled]="addForm.invalid">Add</button>
+                  </div>
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+// @import "~bootstrap/scss/bootstrap";
+* { padding: 0; margin: 0;}
+body {padding: 0 !important; margin: 0 !important; font-family: Arial, Helvetica, sans-serif !important;}
+
+div, p, h1, h2, h3, h4, h5, h6, a, ul, li {
+    padding: 0; margin: 0;
+}
+.nopad { padding-left: 0; padding-right: 0;}
+.padl_r{ padding-right: 1px !important; padding-left: 1px !important;}
+
+.work-wraper {
+    background: #7f5fbd;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    
+
+}
+// .showInputField{
+//     width: 100px;
+//     height: 100px;
+//     background-color: red;
+// }
+
+.workbox {
+    width:100%;
+    height: auto;
+    background: #dcd6f1;
+    border:2px solid #333;
+    padding:  10px 15px;
+}
+.smbx{width: 100%; padding: 6px 10px; background: #fff; border:1px solid #666;
+    margin-bottom: 5px; border-radius: 3px;}
+.workbox .btn {padding: 5px 10px !important;}
+.body-box{
+    width: 500px;
+    height: 200px;
+    background: #dcd6f1;
+    padding: 10px;
+    margin-bottom: 20px;
+    border:2px solid #333;
+}

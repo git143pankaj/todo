@@ -1,0 +1,48 @@
+<div class="work-wraper">
+    <h5>Sample Application</h5>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-right">
+            <!-- <a class="btn btn-primary mt-3 mb-3" (click)="addList('addwork')">Add List</a> -->
+            <a class="btn btn-primary mt-3 mb-3" (click)="addList()">Add Work List</a>
+        </div>        
+    </div>
+</div>
+
+
+<div class="worklist">
+    <div class="container">
+        <div class="col-12">
+            <h2>Work List</h2>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="workbox">
+                        <h5>To Do</h5>
+                        <div *ngFor="let data of worklist">
+                            <div class="row m-0">
+                                <div class="col-xs-12 col-sm-6 col-md-2 padl_r">
+                                    <div class="smbx">{{data.id}}</div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-7 padl_r">
+                                    <div class="smbx">{{data.name}}</div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 padl_r ">
+                                    <a class="btn btn-primary mr-1" (click)="editWrokList(data.id)"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
+                                    <a class="btn btn-primary" (click)="deleteWorkList(data.id)"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary mt-3 mb-3" routerLink="/addwork">Add More Work</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div [innerHTML]="myHtml">
+                    fffhakakakaka
+                </div>               
+            </div>
+        </div>
+    </div>
+</div>
+
